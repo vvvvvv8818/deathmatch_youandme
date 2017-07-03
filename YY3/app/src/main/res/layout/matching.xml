@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/match"
+        android:layout_above="@+id/textview"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Matching \n For Bluetooth"
+        android:textSize="40sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_below="@+id/textview"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="검색가능상태는 메뉴키를 눌러주세요\nPlease use menu key to enable to Search"
+        android:textSize="20sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/searching"
+        android:id="@+id/research"
+        android:layout_gravity="left|bottom"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textview2"
+        android:layout_alignLeft="@+id/textview"
+        android:layout_alignStart="@+id/textview" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/playgame"
+        android:id="@+id/gamechoice"
+        android:layout_gravity="right|bottom"
+        android:layout_alignTop="@+id/research"
+        android:layout_alignRight="@+id/textview"
+        android:layout_alignEnd="@+id/textview" />
+
+</RelativeLayout>
+
+
+</FrameLayout>
